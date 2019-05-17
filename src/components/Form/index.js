@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import formMatadata from "../../mocks/formData";
 import generateField from "../../util/field";
 
