@@ -7,11 +7,8 @@ export default () => {
   const fields = data[0].sections[0].fields;
   const [formState, setFormState] = useState(fields);
   const setVal = updatedField => {
-    let tmpFd = fields.slice();
-    // debugger;
-    tmpFd = tmpFd.map(fd => {
-      if (fd.name === updatedField.name) return updatedField;
-      return fd;
+    let tmpFd = fields.slice().map(fd => {
+      return fd.name === updatedField.name ? updatedField : fd;
     });
     setFormState(tmpFd);
   };
@@ -19,5 +16,5 @@ export default () => {
     console.log(JSON.stringify(formState));
   }, [formState]);
 
-  return fields.map((field, key) => generateField(field, key, setVal));
+  return fields.map((field, id) => generateField({ field, id, setVal }));
 };

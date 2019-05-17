@@ -1,11 +1,5 @@
 import React from "react";
-export default (field, key, setVal) => {
-  return (
-    <input
-      type="text"
-      key={key}
-      defaultValue={field.initialValue}
-      onChange={e => setVal({ ...field, initialValue: e.target.value })}
-    />
-  );
+import TextInput from "./TextInput";
+export default props => {
+  return <TextInput key={props.id} {...props} />;
 };
