@@ -13,7 +13,7 @@ export default () => {
     setFormState(tmpFd);
   };
   useEffect(() => {
-    console.dir(JSON.stringify(formState[0]));
+    console.dir(JSON.stringify(formState[4]));
   }, [formState]);
 
   return fields.map((field, id) => generateField({ field, id, setVal }));
