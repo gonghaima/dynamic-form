@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 export default ({ field, setVal }) => {
   /** validate here onChange */
   //const [currentInputValue, setCValue] = useState(field.initialValue);

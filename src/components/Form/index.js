@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import formMatadata from "../../mocks/formData";
-import generateField from "../../util/field";
+import generateField from "../../util/generate";
 
 export default () => {
   const data = formMatadata;
