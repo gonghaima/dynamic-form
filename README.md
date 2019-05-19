@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] Validation
+- [ ] Validation - try Constraint validation
 - [ ] Date input - may be use some libraries
 
 ## COMPLETED
